@@ -11,7 +11,7 @@ template = cv2.imread("template.jpg", cv2.IMREAD_GRAYSCALE)
 w, h = template.shape[::-1]
 
 # configure OCR settings
-pytesseract.pytesseract.tesseract_cmd = r"C:\Program Files\Tesseract-OCR\tesseract.exe"  # replace with the path to your Tesseract executable
+# pytesseract.pytesseract.tesseract_cmd = r"C:\Program Files\Tesseract-OCR\tesseract.exe"  # replace with the path to your Tesseract executable
 config = ("--oem 1 --psm 7")  # set OCR engine mode and page segmentation mode
 
 while True:
